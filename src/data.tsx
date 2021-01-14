@@ -1,4 +1,4 @@
-import { Person, PersonPosition, Team } from "./types";
+import { Person, PersonPosition, Team, Board } from "./types";
 
 export let People: {
   [key: string]: Person
@@ -877,6 +877,24 @@ export let PersonPositions: {
   }
 }
 
+export let Boards: {
+  [key: string]: Board
+} = {
+  "recqeqsYTuU8E5BlY": {
+    "createdTime": "2020-02-27T00:19:48.000Z",
+    "id": "recqeqsYTuU8E5BlY",
+    "name": "AFX Board Spring 2020",
+    "positionIds": [
+      "recS6Alvj0ucoHpAP",
+      "recSTOAAePi4eKf5q",
+      "recZ15YVO2u7Eb1Wo"
+    ],
+    "type": "board",
+    "boardSemesterId": [
+      "rec4GaaU2uP8FRfw3"
+    ]
+  }
+}
 
 export let Teams: {
   [key: string]: Team

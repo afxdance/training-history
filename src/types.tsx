@@ -9,7 +9,7 @@ export interface PersonPosition {
     createdTime: string
 
     // Custom columns
-    picture?: Attachment[]
+    picture: Attachment[]
     personIds: string[]
     groupIds: string[]
     positionTitle: string
@@ -33,10 +33,18 @@ export interface Team {
     // Custom columns
     type: string
     name: string
-    positionIds?: string[] // only for board
-    teamPicture?: Attachment[] // only for teams
-    videoUrl?: string // only for teams
-    boardSemesterId?: string[] // todo: should not be array?
-    teamSemesterId?: string[] // todo: should not be array?
-    level?: string
+    positionIds: string[] 
+    teamPicture: Attachment[] 
+    videoUrl?: string 
+    teamSemesterId: string[] 
+    level: string
+}
+
+export interface Board {
+    id: string
+    createdTime: string
+    name: string
+    positionIds: string[]
+    type: string
+    boardSemesterId: string[]
 }
