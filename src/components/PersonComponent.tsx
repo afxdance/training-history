@@ -6,14 +6,16 @@ import "../App.css"
 
 export const PersonComponent: React.FunctionComponent<{
     // Any prop definitions go here
-    personPosition: PersonPosition
+    personPosition: PersonPosition,
+    changeSpotlight: Function
 }> = (props) => {
     // Any component logic goes into the body 
     const person: Person = People[props.personPosition.personIds[0]]
 
+
     // Access specific prop by using props.[name] 
     return (
-        <div className="person">
+        <div className="person" onClick={() => {props.changeSpotlight(person.id)}}>
             <div className="member--img">
                 <img
                     className="board--img"

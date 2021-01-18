@@ -6,7 +6,7 @@ import { PersonComponent } from './PersonComponent'
 import "../App.css"
 
 export const TeamComponent: React.FunctionComponent<{
-    // Any prop definitions go here
+    changeSpotlight: Function,
     team: Team
 }> = (props) => {
     // Any component logic goes into the body 
@@ -14,7 +14,7 @@ export const TeamComponent: React.FunctionComponent<{
 
     if (props.team.positionIds) {
         props.team.positionIds.forEach(positionId => {
-            teamDirectors.push(<PersonComponent personPosition = {PersonPositions[positionId]}/>)
+            teamDirectors.push(<PersonComponent changeSpotlight={props.changeSpotlight} personPosition = {PersonPositions[positionId]}/>)
         })
     }
     // Access specific prop by using props.[name] 
