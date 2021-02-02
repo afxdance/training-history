@@ -5,8 +5,8 @@ However, in future components, we expect that you import only the components + d
 */
 import React from 'react'
 import "../App.css"
-import { People, PersonPositions, Teams } from '../data'
-import {Team, PersonPosition, Person, Attachment} from '../types'
+import { People, PersonPositions, Teams, Boards } from '../data'
+import {Team, PersonPosition, Person, Attachment, Board} from '../types'
 
 export const PersonComponent: React.FunctionComponent<{
     // Any prop definitions go here

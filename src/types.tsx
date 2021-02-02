@@ -4,12 +4,9 @@ export interface Attachment {
 }
 
 export interface PersonPosition {
-    // Airtable fields
     id: string
     createdTime: string
-
-    // Custom columns
-    picture?: Attachment[]
+    picture: Attachment[]
     personIds: string[]
     groupIds: string[]
     positionTitle: string
@@ -26,17 +23,21 @@ export interface Person {
 }
 
 export interface Team {
-    // Airtable fields
     id: string
     createdTime: string
-
-    // Custom columns
     type: string
     name: string
-    positionIds?: string[] // only for board
-    teamPicture?: Attachment[] // only for teams
-    videoUrl?: string // only for teams
-    boardSemesterId?: string[] // todo: should not be array?
-    teamSemesterId?: string[] // todo: should not be array?
-    level?: string
+    positionIds: string[] 
+    teamPicture: Attachment[] 
+    teamSemesterId: string[] 
+    level: string
+}
+
+export interface Board {
+    id: string
+    createdTime: string
+    name: string
+    positionIds: string[]
+    type: string
+    boardSemesterId: string[]
 }
