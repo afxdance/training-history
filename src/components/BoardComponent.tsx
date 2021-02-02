@@ -9,7 +9,10 @@ export const BoardComponent: React.FunctionComponent<{
     // Access specific prop by using props.[name] 
     return (
         <React.Fragment>
-            {/* HTML goes here */}
+            <h2>Board</h2>
+            <div className="board">
+                {/* TODO */}
+            </div>
         </React.Fragment>
     )
 }
