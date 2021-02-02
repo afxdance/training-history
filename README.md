@@ -1,12 +1,12 @@
 # Getting started
 
-Welcome! This is the training team project for History. In this project, you will be recreating a simple version of our AFX [https://afx.dance/](website) using React and Typescript
+Welcome! This is the training team project for History. In this project, you will be recreating a simple version of our AFX [website](https://afx.dance/) using React and Typescript
 
 To set up your environment, do the following:
 
-1. If you haven't already, install [https://git-scm.com/book/en/v2/Getting-Started-Installing-Git](git)
+1. If you haven't already, install [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 2. Run `git clone https://github.com/afxdance/training-history.git`. This will create a folder training-history/ under the directory from which you ran the command
-3. If you haven't already, install [https://nodejs.org/en/download/](nodejs)
+3. If you haven't already, install [nodeJS](https://nodejs.org/en/download/)
 4. On your terminal, under training-history, run `npm install` (npm stands for node package manager, and is installed with NodeJS). This installs all the dependencies needed for this project
 5. Run `npm start`, which will open [http://localhost:3000](http://localhost:3000)! You will see a very bare bones website...very soon it will be a lot livelier! 
 
